@@ -15,14 +15,14 @@
     <script src="lib/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="bg-dark text-light">
     <div class="container-fluid">
         <div class="">
             <div class="form-group">
                 <label for="nome" class="mt-3">Nome: </label>
-                <input type="text" id="nome" class="mt-3 form-control " autofocus="true" onkeypress="salvar(event)">
+                <input type="text" id="nome" class="mt-3 form-control" onfocusout="validar()"autofocus="true" onkeypress="salvar(event)">
             </div>
-            <button onclick="adicionar()" class="btn btn-success ">Adicionar</button>
+            <button onclick="adicionarEditar()"  class="btn btn-success ">Adicionar</button>
         </div>
         <div class="">
             <table class="table table-bordered table-striped table-hover mt-3">
